@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2026沖繩行程表</title>
+<style>
+        body {
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+            font-family: "Microsoft JhengHei", "Heiti TC", sans-serif;
+            display: flex;
+            justify-content: center;
+        }
+        .itinerary-card {
+            width: 500px;
+            background: #fff;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.15);
+            border-radius: 15px;
+            overflow: hidden;
+        }
+        .header {
+            background: linear-gradient(120deg, #4facfe 0%, #00f2fe 100%);
+            color: white;
+            padding: 30px 20px;
+            text-align: center;
+            position: relative;
+        }
+        .header h1 { margin: 0; font-size: 28px; letter-spacing: 2px; }
+        .header p { margin: 10px 0 0; font-size: 16px; opacity: 0.9; }
+        .content { padding: 25px; }
+        
+        /* Timeline Style */
+        .day-block {
+            border-left: 3px solid #e0e0e0;
+            padding-left: 20px;
+            margin-bottom: 25px;
+            position: relative;
+        }
+        .day-block:last-child { margin-bottom: 0; border-left: 3px solid transparent; }
+        
+        .day-badge {
+            position: absolute;
+            left: -34px;
+            top: 0;
+            background: #4facfe;
+            color: white;
+            width: 60px;
+            padding: 5px 0;
+            text-align: center;
+            border-radius: 15px;
+            font-size: 12px;
+            font-weight: bold;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+        }
+        
+        .date { color: #888; font-size: 13px; margin-bottom: 5px; margin-left: 10px; display: block; }
+        .day-title { font-size: 18px; font-weight: bold; color: #333; margin-bottom: 10px; }
+        
+        .activity-list { list-style: none; padding: 0; margin: 0; }
+        .activity-list li {
+            margin-bottom: 8px;
+            display: flex;
+            align-items: flex-start;
+            font-size: 14px;
+            color: #555;
+            line-height: 1.5;
+        }
+        .icon { margin-right: 8px; font-style: normal; }
+        
+        /* LINK STYLES: Make link look like regular text but clickable */
+        .activity-list li a {
+            text-decoration: none; /* 移除底線 */
+            color: inherit;      /* 繼承父元素的顏色 */
+            cursor: pointer;
+        }
+        .activity-list li a:hover {
+            color: #4facfe; /* 滑鼠經過時變色 */
+        }
+
+        .note-box {
+            background-color: #fff8e1;
+            border: 1px solid #ffe082;
+            color: #795548;
+            padding: 10px;
+            border-radius: 8px;
+            font-size: 13px;
+            margin-top: 20px;
+            display: flex;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="itinerary-card">
+        <div class="header">
+            <h1>沖縄 OKINAWA</h1>
+            <p>2026 新春自駕四日遊</p>
+        </div>
+        
+        <div class="content">
+            <div class="day-block">
+                <div class="day-badge">Day 1</div>
+                <span class="date">1/31 (六)</span>
+                <div class="day-title">抵達沖繩・取車之夜</div>
+                <ul class="activity-list">
+                    <li><span class="icon">✈️</span> 晚上抵達那霸機場</li>
+                    <li><span class="icon">🚗</span> 辦理租車手續 (記得帶譯本!)</li>
+                    <li><span class="icon">🏨</span> 前往住宿 Check-in <a href="https://maps.app.goo.gl/mvtM7fJDhibVkemp7" target="_blank" style="padding-left: 5px">📍</a></li>
+                </ul>
+            </div>
+
+            <div class="day-block">
+                <div class="day-badge">Day 2</div>
+                <span class="date">2/1 (日)</span>
+                <div class="day-title">那霸巡禮・瀨長島夕陽</div>
+                <ul class="activity-list">
+                    <li><span class="icon">🐟</span> 早餐：泊港漁市場 (新鮮海鮮 超值龍蝦粥)<a href="https://maps.app.goo.gl/582R6vg8qe3ZUiMJA" target="_blank" style="padding-left: 5px">📍</a> </li>
+                    <li><span class="icon">⛩️</span> 景點：波上宮 (海邊神社) <a href="https://maps.app.goo.gl/QwbH2dfpmctvtnU67" target="_blank" style="padding-left: 5px">📍</a></li>
+                    <li><span class="icon">🛍️</span> 逛街：國際通購物趣 <a href="https://maps.app.goo.gl/iRBosSHVTgT3nE6w8" target="_blank" style="padding-left: 5px">📍</a></li></li>
+                    <li><span class="icon">🏠</span> 暫返民宿放戰利品</li>
+                    <li><span class="icon">🌅</span> 晚餐/散步：瀨長島 Umikaji Terrace <a href="https://maps.app.goo.gl/Er29XZ3wjZFQtm8n7" target="_blank" style="padding-left: 5px">📍</a></li></li>
+                </ul>
+            </div>
+
+            <div class="day-block">
+                <div class="day-badge">Day 3</div>
+                <span class="date">2/2 (一)</span>
+                <div class="day-title">親子同樂・美國村</div>
+                <ul class="activity-list">
+                    <li><span class="icon">🦁</span> 白天：沖繩兒童王國<a href="https://maps.app.goo.gl/mv6hH6he8TctE1fQ6" target="_blank" style="padding-left: 5px">📍</a></li></li></li>
+                    <li><span class="icon">🎡</span> 傍晚：美國村 (異國風情/日落)<a href="https://maps.app.goo.gl/Vvga7YE54pHR3kHk7" target="_blank" style="padding-left: 5px">📍</a></li></li></li>
+                    <li><span class="icon">🏨</span> 返回住宿休息</li>
+                </ul>
+            </div>
+
+            <div class="day-block">
+                <div class="day-badge">Day 4</div>
+                <span class="date">2/3 (二)</span>
+                <div class="day-title">夢幻水族・最後衝刺</div>
+                <ul class="activity-list">
+                    <li><span class="icon">🐠</span> DMM Kariyushi 水族館<a href="https://maps.app.goo.gl/qSDM4CCXw1XFvo3K9" target="_blank" style="padding-left: 5px">📍</a></li></li></li>
+                    <li><span class="icon">🎁</span> 購物：Ashibinaa Outlet <a href="https://maps.app.goo.gl/75yHXR8BumPR9kbC8" target="_blank" style="padding-left: 5px">📍</a></li></li></li>
+                    <li><span class="icon">🚗</span> 加滿油還車 → 前往機場</li>
+                    <li><span class="icon">👋</span> 搭機返台</li>
+                </ul>
+            </div>
+
+            <div class="note-box">
+                <span style="font-size:20px; margin-right:10px;">💡</span>
+                <div>
+                    <b>溫馨提醒：</b><br>
+                    日本駕駛為右駕 (靠左行駛)。<br>
+                    請確認護照及駕照日文譯本皆已帶齊。
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
